@@ -24,7 +24,6 @@ function Getanswer(sender){
         document.getElementById('result').innerHTML="";
         document.getElementById('result2').innerHTML="";
         alert("Значение Z не может равняться нулю")
-
     }
     else if (a==0){
         document.getElementById('result').innerHTML="";
@@ -36,8 +35,7 @@ function Getanswer(sender){
         document.getElementById('result').innerHTML="";
         document.getElementById('result2').innerHTML="";
         alert('Введите значения')
-    }
-    
+    }   
 }
 function Getanswer2(sender){
     let x=document.getElementById('namex').value;
