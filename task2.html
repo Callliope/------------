@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 1</title>
+    <style>
+        .container,
+        .tabcontent {
+            flex-direction: column;
+            align-items: center;
+            display: none;
+            padding: 6px 120px;
+        }
+
+        nav {
+            width: 100%;
+        }
+
+        .nav {
+            /* padding: 1em 0; */
+            background: #ECDAD6;
+            display: flex;
+            list-style: none;
+            margin: 0;
+            width: 100%;
+            height: 50px;
+            padding: 0;
+        }
+
+        button {
+            display: block;
+            text-decoration: none;
+            padding: 1em;
+            background: #ECDAD6;
+            border: none;
+            color: #695753;
+        }
+
+        a:hover {
+            background: #b19891;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav">
+            <button class="tablinks" onclick="openCity(event, 'one')">Задание 1.1</button>
+            <button class="tablinks" onclick="openCity(event, 'two')">Задание 2.1</button>
+            <button class="tablinks" onclick="openCity(event, 'three')">Задание 3.1</button>
+        </div>
+    </nav>
+    <div id="one" class="container tabcontent">
+        <h1>Вариант 6</h1>
+        <h2>Введите значения A и Z для решения задачи</h2>
+        <img src="Screenshot_1.jpg" alt="условие">
+        </br>
+        <label for="name1">Введите значение a :</label>
+        <input id="name1" placeholder="введите число" minlength="1">
+        <label for="name2">Введите значение Z :</label>
+        <input id="name2" placeholder="введите число" minlength="1">
+        <button onclick="Getanswer(this)">Получить значения!</button>
+        Рeзультат C: <span id="result"></span></br>
+        Рeзультат B: <span id="result2"></span>
+    </div>
+    <div id="two" class="container tabcontent">
+        <h1>Вариант 6</h1>
+        <h2>Введите значения x и k для решения задачи</h2>
+        <img src="Screenshot_2.jpg" alt="условие">
+        </br>
+        <label for="namex">Введите значение x :</label>
+        <input id="namex" placeholder="введите число" minlength="1">
+        <label for="namey">Введите значение k :</label>
+        <input id="namey" placeholder="введите число" minlength="1">
+        <button onclick="Getanswer2(this)">Получить значения!</button>
+        Рeзультат Y: <span id="result22"></span></br>
+    </div>
+    <div id="three" class="container tabcontent">
+        <h1>Вариант 6</h1>
+        <img src="Screenshot_3.jpg" alt="условие">
+        </br>
+        <button onclick="Getanswer3(this)">Получить значения!</button>
+        Рeзультат S: <span id="results"></span>
+    </div>
+    <script src="task2.js"></script>
+</body>
+
+</html>
